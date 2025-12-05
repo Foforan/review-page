@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Review Page</title>
+
+<style>
+@media (min-width: 48rem) {
+  .review-page-wrapper {
+    max-width: 500px;
+  }
+}
+
+.cstm-review-page {
+    background: #FCFCFC;
+}
+.review-page-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 500px;
+    height: 100%;
+    background: white;
+    padding: 10px;
+    margin: auto;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+}
+.review-page-wrapper .rte {
+    margin-bottom: 20px;
+}
+
+.rev-starss {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    margin: 10px 0;
+}
+.rev-starss span {
+    display: flex;
+}
+.rev-starss svg {
+    width: 28px;
+}
+.radio-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    border: 1px solid oklch(87.2% .01 258.338);
+    border-radius: 100%;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+.radio-btn-dot {
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  width: 14px;
+  height: 14px;
+}
+.rev-starss.selected .radio-btn-dot {
+  display: flex;
+}
+
+.rating-submit-btn {
+  margin-top: 20px;
+  padding: 10px 30px;
+  border: none;
+  background: #30C19E;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  width: fit-content;
+}
+
+@media screen and (max-width: 749px) {
+  .cstm-review-page {
+    padding: 0 10px;
+  }
+}
+</style>
+
+</head>
+<body>
+
+<div class="cstm-review-page">
+    <div class="review-page-wrapper">
+
+     <div class="rte">
+      <b>Dziękujemy za wybranie Alamoni!</b>
+	<br>
+      Cenimy sobie Państwa opinię i bylibyśmy zaszczyceni, gdyby zechcieli Państwo ocenić swoje doświadczenie z nami.
+     </div>
+
+        <div class="rev-starss" data-rating="5">
+            <div class="radio-btn">
+                <div class="radio-btn-dot" style="background: #14D649"></div>
+            </div>
+            <span>
+                <svg viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 0.873047L14.6942 9.16484H23.4127L16.3593 14.2895L19.0534 22.5813L12 17.4566L4.94658 22.5813L7.64074 14.2895L0.587322 9.16484H9.30583L12 0.873047Z" fill="#14D649"></path></svg>
+                <svg viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 0.873047L14.6942 9.16484H23.4127L16.3593 14.2895L19.0534 22.5813L12 17.4566L4.94658 22.5813L7.64074 14.2895L0.587322 9.16484H9.30583L12 0.873047Z" fill="#14D649"></path></svg>
+                <svg viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 0.873047L14.6942 9.16484H23.4127L16.3593 14.2895L19.0534 22.5813L12 17.4566L4.94658 22.5813L7.64074 14.2895L0.587322 9.16484H9.30583L12 0.873047Z" fill="#14D649"></path></svg>
+                <svg viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 0.873047L14.6942 9.16484H23.4127L16.3593 14.2895L19.0534 22.5813L12 17.4566L4.94658 22.5813L7.64074 14.2895L0.587322 9.16484H9.30583L12 0.873047Z" fill="#14D649"></path></svg>
+                <svg viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 0.873047L14.6942 9.16484H23.4127L16.3593 14.2895L19.0534 22.5813L12 17.4566L4.94658 22.5813L7.64074 14.2895L0.587322 9.16484H9.30583L12 0.873047Z" fill="#14D649"></path></svg>
+            </span>
+        </div>
+
+        <div class="rev-starss" data-rating="4">
+            <div class="radio-btn">
+                <div class="radio-btn-dot" style="background: #00E0B3"></div>
+            </div>
+            <span>
+                <svg viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 0.873047L14.6942 9.16484H23.4127L16.3593 14.2895L19.0534 22.5813L12 17.4566L4.94658 22.5813L7.64074 14.2895L0.587322 9.16484H9.30583L12 0.873047Z" fill="#00E0B3"></path></svg>
+                <svg viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 0.873047L14.6942 9.16484H23.4127L16.3593 14.2895L19.0534 22.5813L12 17.4566L4.94658 22.5813L7.64074 14.2895L0.587322 9.16484H9.30583L12 0.873047Z" fill="#00E0B3"></path></svg>
+                <svg viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 0.873047L14.6942 9.16484H23.4127L16.3593 14.2895L19.0534 22.5813L12 17.4566L4.94658 22.5813L7.64074 14.2895L0.587322 9.16484H9.30583L12 0.873047Z" fill="#00E0B3"></path></svg>
+                <svg viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 0.873047L14.6942 9.16484H23.4127L16.3593 14.2895L19.0534 22.5813L12 17.4566L4.94658 22.5813L7.64074 14.2895L0.587322 9.16484H9.30583L12 0.873047Z" fill="#00E0B3"></path></svg>
+                <svg viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 0.873047L14.6942 9.16484H23.4127L16.3593 14.2895L19.0534 22.5813L12 17.4566L4.94658 22.5813L7.64074 14.2895L0.587322 9.16484H9.30583L12 0.873047Z" fill="#E2E2E2"></path></svg>
+            </span>
+        </div>
+
+        <div class="rev-starss" data-rating="3">
+            <div class="radio-btn">
+                <div class="radio-btn-dot" style="background: #F3CE00"></div>
+            </div>
+            <span>
+                <svg viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 0.873047L14.6942 9.16484H23.4127L16.3593 14.2895L19.0534 22.5813L12 17.4566L4.94658 22.5813L7.64074 14.2895L0.587322 9.16484H9.30583L12 0.873047Z" fill="#F3CE00"></path></svg>
+                <svg viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 0.873047L14.6942 9.16484H23.4127L16.3593 14.2895L19.0534 22.5813L12 17.4566L4.94658 22.5813L7.64074 14.2895L0.587322 9.16484H9.30583L12 0.873047Z" fill="#F3CE00"></path></svg>
+                <svg viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 0.873047L14.6942 9.16484H23.4127L16.3593 14.2895L19.0534 22.5813L12 17.4566L4.94658 22.5813L7.64074 14.2895L0.587322 9.16484H9.30583L12 0.873047Z" fill="#F3CE00"></path></svg>
+                <svg viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 0.873047L14.6942 9.16484H23.4127L16.3593 14.2895L19.0534 22.5813L12 17.4566L4.94658 22.5813L7.64074 14.2895L0.587322 9.16484H9.30583L12 0.873047Z" fill="#E2E2E2"></path></svg>
+                <svg viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 0.873047L14.6942 9.16484H23.4127L16.3593 14.2895L19.0534 22.5813L12 17.4566L4.94658 22.5813L7.64074 14.2895L0.587322 9.16484H9.30583L12 0.873047Z" fill="#E2E2E2"></path></svg>
+            </span>
+        </div>
+
+        <div class="rev-starss" data-rating="2">
+            <div class="radio-btn">
+                <div class="radio-btn-dot" style="background: #FF9500"></div>
+            </div>
+            <span>
+                <svg viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 0.873047L14.6942 9.16484H23.4127L16.3593 14.2895L19.0534 22.5813L12 17.4566L4.94658 22.5813L7.64074 14.2895L0.587322 9.16484H9.30583L12 0.873047Z" fill="#FF9500"></path></svg>
+                <svg viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 0.873047L14.6942 9.16484H23.4127L16.3593 14.2895L19.0534 22.5813L12 17.4566L4.94658 22.5813L7.64074 14.2895L0.587322 9.16484H9.30583L12 0.873047Z" fill="#FF9500"></path></svg>
+                <svg viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 0.873047L14.6942 9.16484H23.4127L16.3593 14.2895L19.0534 22.5813L12 17.4566L4.94658 22.5813L7.64074 14.2895L0.587322 9.16484H9.30583L12 0.873047Z" fill="#E2E2E2"></path></svg>
+                <svg viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 0.873047L14.6942 9.16484H23.4127L16.3593 14.2895L19.0534 22.5813L12 17.4566L4.94658 22.5813L7.64074 14.2895L0.587322 9.16484H9.30583L12 0.873047Z" fill="#E2E2E2"></path></svg>
+                <svg viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 0.873047L14.6942 9.16484H23.4127L16.3593 14.2895L19.0534 22.5813L12 17.4566L4.94658 22.5813L7.64074 14.2895L0.587322 9.16484H9.30583L12 0.873047Z" fill="#E2E2E2"></path></svg>
+            </span>
+        </div>
+
+        <div class="rev-starss" data-rating="1">
+            <div class="radio-btn">
+                <div class="radio-btn-dot" style="background: #FF0000"></div>
+            </div>
+            <span>
+                <svg viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 0.873047L14.6942 9.16484H23.4127L16.3593 14.2895L19.0534 22.5813L12 17.4566L4.94658 22.5813L7.64074 14.2895L0.587322 9.16484H9.30583L12 0.873047Z" fill="#FF0000"></path></svg>
+                <svg viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 0.873047L14.6942 9.16484H23.4127L16.3593 14.2895L19.0534 22.5813L12 17.4566L4.94658 22.5813L7.64074 14.2895L0.587322 9.16484H9.30583L12 0.873047Z" fill="#E2E2E2"></path></svg>
+                <svg viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 0.873047L14.6942 9.16484H23.4127L16.3593 14.2895L19.0534 22.5813L12 17.4566L4.94658 22.5813L7.64074 14.2895L0.587322 9.16484H9.30583L12 0.873047Z" fill="#E2E2E2"></path></svg>
+                <svg viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 0.873047L14.6942 9.16484H23.4127L16.3593 14.2895L19.0534 22.5813L12 17.4566L4.94658 22.5813L7.64074 14.2895L0.587322 9.16484H9.30583L12 0.873047Z" fill="#E2E2E2"></path></svg>
+                <svg viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 0.873047L14.6942 9.16484H23.4127L16.3593 14.2895L19.0534 22.5813L12 17.4566L4.94658 22.5813L7.64074 14.2895L0.587322 9.16484H9.30583L12 0.873047Z" fill="#E2E2E2"></path></svg>
+            </span>
+        </div>
+
+        <button id="ratingSubmitBtn" class="rating-submit-btn">DALEJ</button>
+
+    </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+
+  let selectedRating = null;
+
+  // Click event for rating rows
+  document.querySelectorAll('.rev-starss').forEach(row => {
+    row.addEventListener('click', () => {
+
+      // Remove "selected" state from all
+      document.querySelectorAll('.rev-starss').forEach(r => r.classList.remove('selected'));
+
+      // Mark current clicked
+      row.classList.add('selected');
+
+      // Save the rating
+      selectedRating = row.getAttribute('data-rating');
+    });
+  });
+
+  // Redirect when clicking submit
+  document.getElementById('ratingSubmitBtn').addEventListener('click', () => {
+    if (!selectedRating) {
+      alert("Please select a rating first.");
+      return;
+    }
+
+    // ⭐ Links you can customize
+    const fiveStarLink = "https://www.trustpilot.com/review/alamoni.com";
+    const otherStarLink = "https://alamoni.com/pages/contact";
+
+    if (selectedRating == "5") {
+      window.location.href = fiveStarLink;
+    } else {
+      window.location.href = otherStarLink;
+    }
+  });
+
+});
+</script>
+
+</body>
+</html>
